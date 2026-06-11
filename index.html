@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Titres SEO &amp; Créatifs pour Contenu Automobile | Votre Atelier de Titres Personnalisés</title>
+    <meta name="description" content="Créez instantanément des titres accrocheurs et optimisés pour le SEO automobile : annonces de vente, articles de blog, fiches produit.">
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --primary-color: #8657fd;
+            --secondary-color: #4a4a4a;
+            --accent-color: #2e2e2e;
+            --border-color: #3a3a3a;
+            --font-family-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+
+        body {
+            font-family: var(--font-family-sans);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: var(--accent-color);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05em;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        .section {
+            background-color: var(--accent-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.6rem;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-bottom: 1.5rem;
+            background-color: #2e2e2e;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--text-color);
+            font-size: 1rem;
+            font-family: var(--font-family-mono);
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(134, 87, 253, 0.3);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            padding: 14px 28px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #a07dff;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .result-group {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border: 1px dashed var(--secondary-color);
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .result-group h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-top: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .result-item {
+            background-color: #2e2e2e;
+            border: 1px solid var(--border-color);
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 3px;
+            font-family: var(--font-family-mono);
+            font-size: 0.95rem;
+            word-wrap: break-word;
+        }
+
+        .cta-strip {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            padding: 2.5rem 0;
+            text-align: center;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .cta-strip h2 {
+            color: var(--bg-color);
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .cta-strip p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-strip button {
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            padding: 16px 32px;
+            font-size: 1.2rem;
+        }
+
+        .cta-strip button:hover {
+            background-color: #3a3a3a;
+            color: var(--primary-color);
+        }
+
+        .seo-section {
+            background-color: var(--accent-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+            text-align: left;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        .seo-section h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 0;
+            border-bottom: 1px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .seo-section p {
+            margin-bottom: 1rem;
+        }
+
+        .seo-section ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        .seo-section li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://generateur-de-titres-seo-creatifs-pour-contenu-3ee27875.onrender.com">
+    <meta property="og:title" content="Générateur de Titres SEO &amp; Créatifs pour Contenu Automobile">
+    <meta property="og:description" content="Créez instantanément des titres accrocheurs et optimisés pour le SEO automobile : annonces de vente, articles de blog, fiches produit.">
+    <meta property="og:url" content="https://generateur-de-titres-seo-creatifs-pour-contenu-3ee27875.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Générateur de Titres SEO & Créatifs pour Contenu Automobile", "description": "Créez instantanément des titres accrocheurs et optimisés pour le SEO automobile : annonces de vente, articles de blog, fiches produit.", "url": "https://generateur-de-titres-seo-creatifs-pour-contenu-3ee27875.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="generateur-de-titres-seo-creatifs-pour-contenu-3ee27875" data-runtime-mode="seo_diagnostic">
+    <header>
+        <h1>Maître des Titres Auto : Générateur IA</h1>
+        <p>Attirez l'attention et boostez vos ventes ou votre audience. Créez des titres percutants pour vos annonces de voitures, articles de blog, fiches produit ou publicités automobiles en un instant.</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Votre Atelier de Titres Personnalisés</h2>
+            <form id="tool-form">
+                <label for="car-model">Modèle de véhicule ou Sujet principal :</label>
+                <input type="text" id="car-model" placeholder="Ex: Renault Clio 5, SUV électrique, Entretien auto..." required>
+
+                <label for="keywords">Mots-clés additionnels (séparés par des virgules) :</label>
+                <input type="text" id="keywords" placeholder="Ex: occasion, faible kilométrage, luxe, performances...">
+
+                <label for="context">Contexte d'utilisation du titre :</label>
+                <select id="context">
+                    <option value="annonce-vente">Annonce de vente de véhicule</option>
+                    <option value="article-blog">Article de blog / Média auto</option>
+                    <option value="fiche-produit">Fiche produit accessoire / pièce</option>
+                    <option value="publicite">Publicité / Campagne marketing</option>
+                    <option value="comparatif">Comparatif / Guide d'achat</option>
+                </select>
+
+                <button type="submit" id="tool-submit">Générer les Titres</button>
+            </form>
+        </section>
+
+        <section class="section" id="tool-result">
+            <h2 id="result-headline">Vos Titres Générés</h2>
+            <p>Remplissez le formulaire ci-dessus et cliquez sur "Générer les Titres" pour voir apparaître vos propositions ici.</p>
+        </section>
+
+        <section class="cta-strip">
+            <h2>Besoin de plus d'inspiration ?</h2>
+            <p>Notre suite d'outils créatifs va au-delà des titres. Explorez nos autres solutions pour propulser votre communication automobile.</p>
+            <button data-affiliate-slot="autres-outils">Découvrir toute la gamme</button>
+        </section>
+
+        <section class="seo-section">
+            <h3>Boostez votre Présence en Ligne dans l'Automobile</h3>
+            <p>Dans un marché automobile toujours plus concurrentiel, un titre accrocheur et optimisé est votre premier atout pour capter l'attention. Que vous soyez un professionnel de la vente, un blogueur passionné ou un fabricant d'accessoires, notre générateur de titres auto est conçu pour vous aider à vous démarquer.</p>
+            <p>Trouver le bon titre pour une <a href="#">annonce de voiture d'occasion</a>, un <a href="#">article sur les voitures électriques</a>, ou une <a href="#">fiche produit de pièces détachées</a> peut transformer radicalement votre visibilité. Un titre SEO bien pensé augmente votre classement dans les moteurs de recherche, tandis qu'un titre créatif incite au clic et à la découverte de votre contenu.</p>
+            <p>Notre outil vous aide à générer :</p>
+            <ul>
+                <li>Des titres SEO performants pour Google et les plateformes de vente (Leboncoin, La Centrale, etc.).</li>
+                <li>Des titres "clickbait" engageants pour les réseaux sociaux et la publicité.</li>
+                <li>Des titres d'expert pour asseoir votre autorité dans votre niche automobile.</li>
+                <li>Des titres commerciaux qui convertissent, pour vos landing pages et promotions.</li>
+            </ul>
+            <p>Utilisez notre générateur pour trouver des idées uniques et adapter vos messages à chaque support, garantissant ainsi que votre contenu automobile atteint la bonne audience au bon moment. Ne laissez plus un titre fade freiner votre succès !</p>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('tool-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const model = document.getElementById('car-model').value.trim();
+            const keywords = document.getElementById('keywords').value.split(',').map(k => k.trim()).filter(k => k !== '');
+            const context = document.getElementById('context').value;
+            const resultDiv = document.getElementById('tool-result');
+
+            if (!model) {
+                resultDiv.innerHTML = '<h2>Vos Titres Générés</h2><p style="color: #ff6666;">Veuillez renseigner le modèle ou sujet principal pour générer des titres.</p>';
+                return;
+            }
+
+            let generatedTitles = {};
+
+            // --- Logic for title generation based on input ---
+            const baseTitles = [
+                `Le/La Nouveau(elle) ${model} : Révolution sur Route ?`,
+                `Pourquoi le/la ${model} est le choix parfait pour vous`,
+                `${model} : L'Essai Complet et l'Avis de l'Expert`,
+                `Découvrez le/la ${model} : Luxe, Performance et Innovation`,
+                `Comment le/la ${model} Redéfinit l'Expérience de Conduite`
+            ];
+
+            const seoTitles = [
+                `${model} | Achetez au Meilleur Prix [${keywords.join(', ')}]`,
+                `Vente ${model} Occasion | Annonces Certifiées ${keywords.join(', ')}`,
+                `Comparatif ${model} vs Concurrents | Guide d'Achat 2024`,
+                `Fiche Technique ${model} : Performances & Équipements détaillés`,
+                `Test Complet ${model} : Consommation, Fiabilité, Avis Utilisateurs`
+            ];
+
+            const clickbaitTitles = [
+                `Incroyable ! Ce que vous ne savez PAS sur le/la ${model} !`,
+                `${model} : Le Secret Révélé qui Va Changer Votre Conduite !`,
+                `Ne Faites PAS cette Erreur en Acheteant un(e) ${model} !`,
+                `Choquant : La Vérité sur le Prix du/de la ${model} !`,
+                `Le/La ${model} : Est-ce la Meilleure Voiture de l'Année ? Vous ne Croirez Pas la Réponse !`
+            ];
+
+            const expertTitles = [
+                `Analyse Approfondie : Ingénierie et Design du/de la ${model}`,
+                `${model} : Décryptage des Innovations Technologiques`,
+                `La Conduite du/de la ${model} : Une Approche Technique`,
+                `${model} : Optimisation des Performances et Durabilité`,
+                `Évaluation du Potentiel du/de la ${model} sur le Marché`
+            ];
+
+            const softTitles = [
+                `Invitation au Voyage avec le/la ${model}`,
+                `Le/La ${model} : Votre Prochain Compagnon de Route ?`,
+                `Découvrez les Atouts du/de la ${model} en Douceur`,
+                `Une Nouvelle Façon de Conduire : Le/La ${model}`,
+                `Bien-être et Confort à Bord du/de la ${model}`
+            ];
+
+            const commercialTitles = [
+                `OFFRE SPÉCIALE ${model} : Jusqu'à -X% en Ce Moment !`,
+                `ACHETEZ le/la ${model} MAINTENANT et Économisez Gros !`,
+                `Promotion Exclusive ${model} : Ne Manquez Pas Cette Chance !`,
+                `Le/La ${model} à Partir de XXX€/mois | Réservez Votre Essai`,
+                `DESTOCKAGE ${model} : Les Dernières Unités Disponibles !`
+            ];
+
+            generatedTitles.SEO = seoTitles.map(t => t.replace(/\[([^\]]+)\]/, keywords.length > 0 ? keywords.join(', ') : ''));
+            generatedTitles.Clickbait = clickbaitTitles;
+            generatedTitles.Expert = expertTitles;
+            generatedTitles.Doux = softTitles;
+            generatedTitles.Commercial = commercialTitles;
+
+            resultDiv.innerHTML = `<h2>Vos Titres Générés</h2>`;
+
+            for (const type in generatedTitles) {
+                const groupDiv = document.createElement('div');
+                groupDiv.classList.add('result-group');
+                groupDiv.innerHTML = `<h3>${type}</h3>`;
+                generatedTitles[type].forEach(title => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.classList.add('result-item');
+                    itemDiv.textContent = title.replace(/model/g, model);
+                    groupDiv.appendChild(itemDiv);
+                });
+                resultDiv.appendChild(groupDiv);
+            }
+        });
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.removeAttribute("rel");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  let qaFinished = false;
+  let qaWatchdog = null;
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function primaryAction(form) {
+    if (!form) return null;
+    return (
+      document.getElementById("tool-submit") ||
+      form.querySelector("#tool-submit") ||
+      form.querySelector("[data-primary-action]") ||
+      form.querySelector("button[type=submit]") ||
+      form.querySelector("button") ||
+      form.querySelector("input[type=submit]")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset" || type === "image" || type === "file") {
+      return;
+    }
+    const currentValue = normalize(field.value);
+    if (tag === "select") {
+      if (currentValue) return;
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      if (currentValue) return;
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      if (currentValue) return;
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      if (currentValue) return;
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      if (currentValue) return;
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      if (currentValue) return;
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      if (currentValue) return;
+      field.value = sampleNumber(field);
+      return;
+    }
+    if (currentValue) return;
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    if (qaFinished) return;
+    qaFinished = true;
+    if (qaWatchdog) {
+      window.clearTimeout(qaWatchdog);
+      qaWatchdog = null;
+    }
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+    window.setTimeout(function () {
+      try {
+        window.stop();
+      } catch (_error) {}
+    }, 0);
+  }
+
+  function installModalGuards() {
+    const noop = function () {};
+    const approve = function () { return true; };
+    const empty = function () { return ""; };
+    try { window.alert = noop; } catch (_error) {}
+    try { window.confirm = approve; } catch (_error) {}
+    try { window.prompt = empty; } catch (_error) {}
+  }
+
+  function triggerAction(form, action) {
+    try {
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(action || undefined);
+        return;
+      }
+    } catch (_error) {}
+    if (action && typeof action.click === "function") {
+      action.click();
+      return;
+    }
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    qaWatchdog = window.setTimeout(function () {
+      stamp("fail", "QA smoke timed out before the page reported a usable result.", "");
+    }, 7000);
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    installModalGuards();
+    try {
+      form.querySelectorAll("input, select, textarea").forEach(applySample);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke sample failed: ${error.message}` : "QA smoke sample failed before submit.", "");
+      return;
+    }
+    const action = primaryAction(form);
+    try {
+      triggerAction(form, action);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke submit failed: ${error.message}` : "QA smoke submit failed.", "");
+      return;
+    }
+    inspectResult(before, 10);
+  }
+
+  window.addEventListener("error", function (event) {
+    const message = event && event.message ? event.message : "JavaScript runtime error during QA smoke.";
+    stamp("fail", `QA smoke JS error: ${message}`, "");
+  }, { once: true });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    const reason = event && event.reason;
+    const detail = typeof reason === "string"
+      ? reason
+      : reason && reason.message
+        ? reason.message
+        : "Unhandled promise rejection during QA smoke.";
+    stamp("fail", `QA smoke rejection: ${detail}`, "");
+  }, { once: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
